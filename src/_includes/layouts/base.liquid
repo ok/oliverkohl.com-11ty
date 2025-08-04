@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <title>{{ site.metadata.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.metadata.description }}">
+    <meta name="keywords" content="{{ site.metadata.keywords }}">
+{% include "partials/og-tags.liquid" %}
+    <link rel="canonical" href="{{ site.domain }}{{ page.url  }}">
+    {%- if site.prodenv %}
+    <link rel="preload" as="style" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+    {%- else %}
+    <link rel="stylesheet" href="/css/index.css">
+    {%- endif %}
+    <link rel="icon" type="image/png" href="/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/img/favicon-167.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/img/favicon-180.png">
+    <script type="module" src="/js/main.js"></script>
+    {%- if page.url contains "/news/" %}
+{% include "partials/jsonld-post.liquid" %}
+    {% endif %}
+{% include "partials/jsonld-organisation.liquid" %}
+  </head>
+  <body class="list dark">
+{% comment %} {% include "partials/header.liquid" %} {% endcomment %}
+{{content}}
+{% comment %} {% include "partials/footer.liquid" %} {% endcomment %}
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "nav_items": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Websites",
+      "url": "/websites"
+    },
+    {
+      "title": "Fontboy",
+      "url": "/fontboy"
+    }
+  ]
+}
