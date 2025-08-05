@@ -2,7 +2,7 @@ export default {
   title: 'Oliver Kohl',
   description: 'Experience Engineer',
   url: 'https://oliverkohl.com/',
-  keywords: "",
+  keywords: "software, developer, beos, sap, web",
   image: "",
   seoimage: "",
   // baseUrl: '/',
