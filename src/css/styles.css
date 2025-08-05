@@ -252,8 +252,7 @@ pre:hover .copy-code {
     font-size: 12px
 }
 
-.post-content a,.toc a:hover {
-    box-shadow: 0 1px;
+.post-content a {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone
 }
