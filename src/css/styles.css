@@ -72,7 +72,7 @@ ul {
 }
 
 a {
-    text-decoration: none
+    text-decoration: underline;
 }
 
 .main {
@@ -110,6 +110,10 @@ a {
 
 .social-icons a:not(:last-of-type) {
     margin-inline-end: 12px;
+}
+
+.social-icons a {
+    text-decoration: none;
 }
 
 .social-icons a svg {
@@ -194,9 +198,10 @@ pre:hover .copy-code {
     font-size: 40px
 }
 
-.post-description {
+.post-subtitle {
     margin-top: 10px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    font-style: italic;
 }
 
 .post-meta,.breadcrumbs {
@@ -211,10 +216,6 @@ pre:hover .copy-code {
     list-style: none;
     margin: auto 3px;
     box-shadow: 0 1px 0 var(--secondary)
-}
-
-.breadcrumbs a {
-    font-size: 16px
 }
 
 .post-content {
